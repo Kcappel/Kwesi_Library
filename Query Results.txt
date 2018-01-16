@@ -1,0 +1,387 @@
+1)
+old:SELECT title, authors.author_id, author_name --Performs right join to display contents and allows user selection on how it is ordered.
+FROM books RIGHT JOIN authors
+ON books.author_id = authors.author_id
+ORDER BY &COLUMN_NAME
+new:SELECT title, authors.author_id, author_name --Performs right join to display contents and allows user selection on how it is ordered.
+FROM books RIGHT JOIN authors
+ON books.author_id = authors.author_id
+ORDER BY author_name
+
+TITLE                                                    AUTHOR_ID AUTHOR_NAME                                  
+------------------------------------------------------- ---------- ---------------------------------------------
+The Third Wave                                                   9 Alvin Toffler                                
+Oracle Database 12c DBA Handbook                                31 Bob Bryla                                    
+Algorithms to Live By                                            2 Brian Christian/Tom Griffiths                
+Eldest                                                          13 Christopher Paolini                          
+The Assassin                                                    20 Clive Cussler                                
+How to Win Friends & Influence People                           10 Dale Carnegie                                
+The Lost Symbol                                                  6 Dan Brown                                    
+Inferno                                                          6 Dan Brown                                    
+The Da Vinci Code                                                6 Dan Brown                                    
+Superforecasting                                                29 Dan Gardner/Philip E. Tetlock                
+1984                                                            23 George Orwell                                
+
+TITLE                                                    AUTHOR_ID AUTHOR_NAME                                  
+------------------------------------------------------- ---------- ---------------------------------------------
+A Clash of Kings                                                17 George RR Martin                             
+Wild Cards I                                                    17 George RR Martin                             
+A Dance With Dragons                                            17 George RR Martin                             
+A Feast For Crows                                               17 George RR Martin                             
+A Storm of Swords                                               17 George RR Martin                             
+A Game of Thrones                                               17 George RR Martin                             
+Decision Points                                                  5 George W. Bush                               
+The 10X Rule                                                    11 Grant Cardone                                
+Java: A Beginners Guide 6th Ed.                                  3 Herbert Schildt                              
+Beginning Oracle Database Administration 12c                    30 Itnatius Fernandez                           
+Truth or Die                                                    18 James Patterson                              
+
+TITLE                                                    AUTHOR_ID AUTHOR_NAME                                  
+------------------------------------------------------- ---------- ---------------------------------------------
+Pride & Prejudice % Zombies                                     14 Jane Austen                                  
+How Not to Be Wrong                                             28 Jordan Ellenberg                             
+The Nightingale                                                  7 Kristin Hannah                               
+Meditations                                                     16 Marcus Aurelius                              
+Oracle Certification Prep                                        1 Matthew Morris                               
+World War Z                                                     27 Max Brooks                                   
+Oracle Database 12c PL/SQL Programming                          32 Michael McLaughlin                           
+The Lions Game                                                  12 Nelson DeMille                               
+The Alchemist                                                   21 Paulo Coelho                                 
+The Reality Dysfunction                                         33 Peter F. Hamilton                            
+Jonathan Livingston Seagull                                     25 Richard Bach                                 
+
+TITLE                                                    AUTHOR_ID AUTHOR_NAME                                  
+------------------------------------------------------- ---------- ---------------------------------------------
+The Hot Zone                                                    24 Richard Preston                              
+11/22/1963                                                       4 Stephen King                                 
+The Shining                                                      4 Stephen King                                 
+The Stand                                                        4 Stephen King                                 
+Mr. Mercedes                                                     4 Stephen King                                 
+The Dark Tower III                                               4 Stephen King                                 
+The Dark Tower VII                                               4 Stephen King                                 
+The Mist                                                         4 Stephen King                                 
+The Soloist                                                     22 Steve Lopez                                  
+Naked Greed                                                     19 Stuart Woods                                 
+The Art of War                                                  15 Sun Tzu                                      
+
+TITLE                                                    AUTHOR_ID AUTHOR_NAME                                  
+------------------------------------------------------- ---------- ---------------------------------------------
+Alien: Out of the Shadows                                       26 Tim Lebbon                                   
+Clear & Present Danger                                           8 Tom Clancy                                   
+
+46 rows selected. 
+
+2)
+TITLE                                                    AUTHOR_ID AUTHOR_NAME                                  
+------------------------------------------------------- ---------- ---------------------------------------------
+11/22/1963                                                       4 Stephen King                                 
+Mr. Mercedes                                                     4 Stephen King                                 
+The Dark Tower VII                                               4 Stephen King                                 
+The Stand                                                        4 Stephen King                                 
+The Mist                                                         4 Stephen King                                 
+The Shining                                                      4 Stephen King                                 
+The Dark Tower III                                               4 Stephen King                                 
+The Art of War                                                  15 Sun Tzu                                      
+Naked Greed                                                     19 Stuart Woods                                 
+The Soloist                                                     22 Steve Lopez                                  
+
+10 rows selected. 
+
+3)
+TITLE                                                   AUTHOR_NAME                                   PUBLICATION_YEAR ISBN10    
+------------------------------------------------------- --------------------------------------------- ---------------- ----------
+The Da Vinci Code                                       Dan Brown                                                 2003 0385504209
+The Dark Tower VII                                      Stephen King                                              2004           
+Eldest                                                  Christopher Paolini                                       2005 037582670X
+A Feast For Crows                                       George RR Martin                                          2005 0553801503
+World War Z                                             Max Brooks                                                2006 0307346609
+The Lost Symbol                                         Dan Brown                                                 2009           
+Pride & Prejudice % Zombies                             Jane Austen                                               2009           
+The Art of War                                          Sun Tzu                                                   2009           
+Decision Points                                         George W. Bush                                            2010           
+The Soloist                                             Steve Lopez                                               2010           
+A Dance With Dragons                                    George RR Martin                                          2011           
+
+TITLE                                                   AUTHOR_NAME                                   PUBLICATION_YEAR ISBN10    
+------------------------------------------------------- --------------------------------------------- ---------------- ----------
+The 10X Rule                                            Grant Cardone                                             2011           
+11/22/1963                                              Stephen King                                              2011           
+Inferno                                                 Dan Brown                                                 2013           
+Java: A Beginners Guide 6th Ed.                         Herbert Schildt                                           2014           
+How Not to Be Wrong                                     Jordan Ellenberg                                          2014           
+Meditations                                             Marcus Aurelius                                           2014           
+Oracle Database 12c PL/SQL Programming                  Michael McLaughlin                                        2014           
+Mr. Mercedes                                            Stephen King                                              2014           
+Alien: Out of the Shadows                               Tim Lebbon                                                2014           
+The Assassin                                            Clive Cussler                                             2015           
+Naked Greed                                             Stuart Woods                                              2015           
+
+TITLE                                                   AUTHOR_NAME                                   PUBLICATION_YEAR ISBN10    
+------------------------------------------------------- --------------------------------------------- ---------------- ----------
+Truth or Die                                            James Patterson                                           2015 0316407011
+The Nightingale                                         Kristin Hannah                                            2015           
+Oracle Database 12c DBA Handbook                        Bob Bryla                                                 2015           
+Beginning Oracle Database Administration 12c            Itnatius Fernandez                                        2015           
+Superforecasting                                        Dan Gardner/Philip E. Tetlock                             2015           
+Oracle Certification Prep                               Matthew Morris                                            2016 194140409X
+Algorithms to Live By                                   Brian Christian/Tom Griffiths                             2016           
+
+29 rows selected. 
+
+4)
+GENRE                     AVG_GENRE_PRICE
+------------------------- ---------------
+Futurology                           3.95
+Apocalyptic Fiction                 15.95
+Fiction                             15.99
+Sci-Fi Horror                        7.99
+Medival Fantasy                      9.59
+Dystopian Fiction                    9.99
+Science                                18
+Crime Fiction                          20
+Thriller                            13.99
+Science Fiction                        19
+Memoir                                 35
+
+GENRE                     AVG_GENRE_PRICE
+------------------------- ---------------
+Life Enrichment                     16.71
+Historical Fiction                  27.99
+Historical Strategy                  3.99
+Historical Non-Fiction               7.99
+Superhero Fiction                    8.99
+Alternate History                      35
+Detective Fiction                   22.98
+Comical Fiction                     12.95
+Fantasy Fiction                      7.99
+Fantasy                             13.31
+Education                           44.77
+
+GENRE                     AVG_GENRE_PRICE
+------------------------- ---------------
+Govt. Fiction                       12.47
+Supernatural Horror                  7.99
+
+24 rows selected. 
+
+5)
+FIRST_NAME||''||LAST_NAME       CASE                                                  
+------------------------------- ------------------------------------------------------
+Matthew Morris                  This author is not from one of the selected home state
+Brian Christian                 This author is not from one of the selected home state
+Herbert Schildt                 Author from Illinois                                  
+Stephen King                    This author is not from one of the selected home state
+George Bush                     This author is not from one of the selected home state
+Dan Brown                       This author is not from one of the selected home state
+Kristin Hannah                  Author from California                                
+Tom Clancy                      This author is not from one of the selected home state
+Alvin Toffler                   Author from New York                                  
+Dale Carnegie                   This author is not from one of the selected home state
+Grant Cardone                   This author is not from one of the selected home state
+
+FIRST_NAME||''||LAST_NAME       CASE                                                  
+------------------------------- ------------------------------------------------------
+Nelson DeMille                  Author from New York                                  
+Christopher Paolini             Author from California                                
+Jane Austen                     Author from UK                                        
+Sun Tzu                         This author is not from one of the selected home state
+Marcus Aurelius                 This author is not from one of the selected home state
+George Martin                   This author is not from one of the selected home state
+James Patterson                 Author from New York                                  
+Stuart Woods                    This author is not from one of the selected home state
+Clive Cussler                   Author from Illinois                                  
+Paulo Coelho                    This author is not from one of the selected home state
+Steve Lopez                     Author from California                                
+
+FIRST_NAME||''||LAST_NAME       CASE                                                  
+------------------------------- ------------------------------------------------------
+George Orwell                   This author is not from one of the selected home state
+Richard Preston                 This author is not from one of the selected home state
+Richard Bach                    Author from Illinois                                  
+Tim Lebbon                      Author from UK                                        
+Max Brooks                      Author from New York                                  
+Jordan Ellenberg                This author is not from one of the selected home state
+Dan Gardner                     This author is not from one of the selected home state
+Ignatius Fernanandez            This author is not from one of the selected home state
+Bob Bryla                       Author from Illinois                                  
+Michael McLaughlin              This author is not from one of the selected home state
+Peter Hamilton                  Author from UK                                        
+
+33 rows selected. 
+
+6)
+   BOOK_ID AUTHOR_NAME                                   PUBLISHER                      PUBLICATION_YEAR      PRICE
+---------- --------------------------------------------- ------------------------------ ---------------- ----------
+        31 Dan Brown                                     Doubleday                                  2003       9.99
+        10 Stephen King                                  Grant                                      2004      18.95
+        18 Christopher Paolini                           Alfred A. Knoph                            2005      12.99
+        25 George RR Martin                              Bantam Spectra                             2005       9.99
+        39 Max Brooks                                    Crown Publishers                           2006      14.95
+         7 Dan Brown                                     Doubleday                                  2009      29.95
+        19 Jane Austen                                   Quirk Books                                2009      12.95
+        20 Sun Tzu                                       Nabla                                      2009       3.99
+         5 George W. Bush                                Crown Publishers                           2010         35
+        34 Steve Lopez                                   Penguin Publishing                         2010      15.99
+         4 Stephen King                                  Scribner                                   2011         35
+
+   BOOK_ID AUTHOR_NAME                                   PUBLISHER                      PUBLICATION_YEAR      PRICE
+---------- --------------------------------------------- ------------------------------ ---------------- ----------
+        14 Grant Cardone                                 Wiley                                      2011      24.95
+        26 George RR Martin                              Bantam Spectra                             2011       9.99
+        17 Dan Brown                                     Doubleday                                  2013         16
+         6 Stephen King                                  Scribner                                   2014         30
+        21 Marcus Aurelius                               Black & White Classics                     2014       7.99
+        38 Tim Lebbon                                    Titan Books                                2014       7.99
+        41 Jordan Ellenberg                              Penguin Publishing                         2014         17
+        45 Michael McLaughlin                            Oracle Press                               2014         70
+         8 Kristin Hannah                                St. Martins Press                          2015      27.99
+        27 James Patterson                               Little, Brown and Company                  2015         28
+        28 Stuart Woods                                  G.P. Putnams Sons                          2015       9.99
+
+   BOOK_ID AUTHOR_NAME                                   PUBLISHER                      PUBLICATION_YEAR      PRICE
+---------- --------------------------------------------- ------------------------------ ---------------- ----------
+        29 Clive Cussler                                 G.P. Putnams Sons                          2015       9.99
+        42 Dan Gardner/Philip E. Tetlock                 Broadway Books                             2015         17
+        43 Itnatius Fernandez                            Apress                                     2015      33.86
+        44 Bob Bryla                                     Oracle Press                               2015         65
+         1 Matthew Morris                                ODB Press                                  2016      14.99
+         2 Brian Christian/Tom Griffiths                 Picador                                    2016         18
+
+28 rows selected. 
+
+7)
+   BOOK_ID TITLE                                                   AUTHOR_NAME                                  
+---------- ------------------------------------------------------- ---------------------------------------------
+         1 Oracle Certification Prep                               Matthew Morris                               
+         2 Algorithms to Live By                                   Brian Christian/Tom Griffiths                
+         3 Java: A Beginners Guide 6th Ed.                         Herbert Schildt                              
+         4 11/22/1963                                              Stephen King                                 
+         5 Decision Points                                         George W. Bush                               
+         6 Mr. Mercedes                                            Stephen King                                 
+         7 The Lost Symbol                                         Dan Brown                                    
+         8 The Nightingale                                         Kristin Hannah                               
+        10 The Dark Tower VII                                      Stephen King                                 
+        14 The 10X Rule                                            Grant Cardone                                
+        15 The Lions Game                                          Nelson DeMille                               
+
+   BOOK_ID TITLE                                                   AUTHOR_NAME                                  
+---------- ------------------------------------------------------- ---------------------------------------------
+        17 Inferno                                                 Dan Brown                                    
+        18 Eldest                                                  Christopher Paolini                          
+        19 Pride & Prejudice % Zombies                             Jane Austen                                  
+        20 The Art of War                                          Sun Tzu                                      
+        21 Meditations                                             Marcus Aurelius                              
+        22 A Game of Thrones                                       George RR Martin                             
+        23 A Clash of Kings                                        George RR Martin                             
+        24 A Storm of Swords                                       George RR Martin                             
+        25 A Feast For Crows                                       George RR Martin                             
+        26 A Dance With Dragons                                    George RR Martin                             
+        27 Truth or Die                                            James Patterson                              
+
+   BOOK_ID TITLE                                                   AUTHOR_NAME                                  
+---------- ------------------------------------------------------- ---------------------------------------------
+        28 Naked Greed                                             Stuart Woods                                 
+        29 The Assassin                                            Clive Cussler                                
+        31 The Da Vinci Code                                       Dan Brown                                    
+        32 The Dark Tower III                                      Stephen King                                 
+        34 The Soloist                                             Steve Lopez                                  
+        36 The Hot Zone                                            Richard Preston                              
+        38 Alien: Out of the Shadows                               Tim Lebbon                                   
+        39 World War Z                                             Max Brooks                                   
+        41 How Not to Be Wrong                                     Jordan Ellenberg                             
+        42 Superforecasting                                        Dan Gardner/Philip E. Tetlock                
+        43 Beginning Oracle Database Administration 12c            Itnatius Fernandez                           
+
+   BOOK_ID TITLE                                                   AUTHOR_NAME                                  
+---------- ------------------------------------------------------- ---------------------------------------------
+        44 Oracle Database 12c DBA Handbook                        Bob Bryla                                    
+        45 Oracle Database 12c PL/SQL Programming                  Michael McLaughlin                           
+        46 The Reality Dysfunction                                 Peter F. Hamilton                            
+
+36 rows selected. 
+
+8)
+TITLE                                                   AUTHOR_NAME                                   PUBLICATION_YEAR
+------------------------------------------------------- --------------------------------------------- ----------------
+Jonathan Livingston Seagull                             Richard Bach                                              1970
+Java: A Beginners Guide 6th Ed.                         Herbert Schildt                                           2014
+Oracle Database 12c DBA Handbook                        Bob Bryla                                                 2015
+The Assassin                                            Clive Cussler                                             2015
+
+9)
+TABLE_NAME                     STATUS     PCT_FREE   PCT_USED   NUM_ROWS     BLOCKS
+------------------------------ -------- ---------- ---------- ---------- ----------
+AUTHORS                        VALID            10                    33          5
+
+
+TABLE_NAME                     STATUS     PCT_FREE   PCT_USED   NUM_ROWS     BLOCKS
+------------------------------ -------- ---------- ---------- ---------- ----------
+BOOKS                          VALID            10                    46          5
+
+10)
+View VIEW_BOOKS_AUTHORS_DETAILS created.
+
+
+ AUTHOR_ID AUTHOR_NAME                                   HOME_STATE         TITLE                                                   PUBLICATION_YEAR PUBLISHER                      GENRE                          PRICE
+---------- --------------------------------------------- ------------------ ------------------------------------------------------- ---------------- ------------------------------ ------------------------- ----------
+        10 Dale Carnegie                                 Missouri           How to Win Friends & Influence People                               1936 Simon & Schuster               Life Enrichment                16.95
+        23 George Orwell                                 India              1984                                                                1949 Secker & Warburg               Dystopian Fiction               9.99
+        25 Richard Bach                                  Illinois           Jonathan Livingston Seagull                                         1970 Macmillian                     Life Enrichment                 7.63
+         4 Stephen King                                  Oklahoma           The Shining                                                         1977 Doubleday                      Supernatural Horror             8.99
+         4 Stephen King                                  Oklahoma           The Stand                                                           1978 Doubleday                      Apocalyptic Fiction            16.95
+         9 Alvin Toffler                                 New York           The Third Wave                                                      1980 Bantam Books                   Futurology                      3.95
+         4 Stephen King                                  Oklahoma           The Mist                                                            1980 Viking Press                   Supernatural Horror             6.99
+        17 George RR Martin                              New Jersey         Wild Cards I                                                        1987 Bantam Spectra                 Superhero Fiction               8.99
+        21 Paulo Coelho                                  Brazil             The Alchemist                                                       1988 Harper Touch                   Fantasy Fiction                 7.99
+         8 Tom Clancy                                    Maryland           Clear & Present Danger                                              1989 Putnam                         Govt. Fiction                   8.99
+         4 Stephen King                                  Oklahoma           The Dark Tower III                                                  1991 Grant                          Fantasy                         7.99
+
+ AUTHOR_ID AUTHOR_NAME                                   HOME_STATE         TITLE                                                   PUBLICATION_YEAR PUBLISHER                      GENRE                          PRICE
+---------- --------------------------------------------- ------------------ ------------------------------------------------------- ---------------- ------------------------------ ------------------------- ----------
+        24 Richard Preston                               Massachusetts      The Hot Zone                                                        1995 Anchor                         Thriller                        7.99
+        33 Peter F. Hamilton                             UK                 The Reality Dysfunction                                             1996 Orbit                          Science Fiction                   19
+        17 George RR Martin                              New Jersey         A Game of Thrones                                                   1996 Bantam Spectra                 Medival Fantasy                 8.99
+        17 George RR Martin                              New Jersey         A Clash of Kings                                                    1999 Bantam Spectra                 Medival Fantasy                 8.99
+        12 Nelson DeMille                                New York           The Lions Game                                                      2000 Grand Central Publishing       Govt. Fiction                  15.95
+        17 George RR Martin                              New Jersey         A Storm of Swords                                                   2000 Bantam Spectra                 Medival Fantasy                 9.99
+         6 Dan Brown                                     New Hampshire      The Da Vinci Code                                                   2003 Doubleday                      Crime Fiction                   9.99
+         4 Stephen King                                  Oklahoma           The Dark Tower VII                                                  2004 Grant                          Fantasy                        18.95
+        17 George RR Martin                              New Jersey         A Feast For Crows                                                   2005 Bantam Spectra                 Medival Fantasy                 9.99
+        13 Christopher Paolini                           California         Eldest                                                              2005 Alfred A. Knoph                Fantasy                        12.99
+        27 Max Brooks                                    New York           World War Z                                                         2006 Crown Publishers               Apocalyptic Fiction            14.95
+
+ AUTHOR_ID AUTHOR_NAME                                   HOME_STATE         TITLE                                                   PUBLICATION_YEAR PUBLISHER                      GENRE                          PRICE
+---------- --------------------------------------------- ------------------ ------------------------------------------------------- ---------------- ------------------------------ ------------------------- ----------
+        14 Jane Austen                                   UK                 Pride & Prejudice % Zombies                                         2009 Quirk Books                    Comical Fiction                12.95
+        15 Sun Tzu                                       Ancient China      The Art of War                                                      2009 Nabla                          Historical Strategy             3.99
+         6 Dan Brown                                     New Hampshire      The Lost Symbol                                                     2009 Doubleday                      Detective Fiction              29.95
+         5 George W. Bush                                Connecticut        Decision Points                                                     2010 Crown Publishers               Memoir                            35
+        22 Steve Lopez                                   California         The Soloist                                                         2010 Penguin Publishing             Fiction                        15.99
+        11 Grant Cardone                                 Louisiana          The 10X Rule                                                        2011 Wiley                          Life Enrichment                24.95
+         4 Stephen King                                  Oklahoma           11/22/1963                                                          2011 Scribner                       Alternate History                 35
+        17 George RR Martin                              New Jersey         A Dance With Dragons                                                2011 Bantam Spectra                 Medival Fantasy                 9.99
+         6 Dan Brown                                     New Hampshire      Inferno                                                             2013 Doubleday                      Detective Fiction                 16
+        16 Marcus Aurelius                               Ancient Rome       Meditations                                                         2014 Black & White Classics         Historical Non-Fiction          7.99
+         4 Stephen King                                  Oklahoma           Mr. Mercedes                                                        2014 Scribner                       Crime Fiction                     30
+
+ AUTHOR_ID AUTHOR_NAME                                   HOME_STATE         TITLE                                                   PUBLICATION_YEAR PUBLISHER                      GENRE                          PRICE
+---------- --------------------------------------------- ------------------ ------------------------------------------------------- ---------------- ------------------------------ ------------------------- ----------
+         3 Herbert Schildt                               Illinois           Java: A Beginners Guide 6th Ed.                                     2014 McGraw-Hill Education          Education                         40
+        32 Michael McLaughlin                            Colorado           Oracle Database 12c PL/SQL Programming                              2014 Oracle Press                   Education                         70
+        28 Jordan Ellenberg                              Maryland           How Not to Be Wrong                                                 2014 Penguin Publishing             Life Enrichment                   17
+        26 Tim Lebbon                                    UK                 Alien: Out of the Shadows                                           2014 Titan Books                    Sci-Fi Horror                   7.99
+         7 Kristin Hannah                                California         The Nightingale                                                     2015 St. Martins Press              Historical Fiction             27.99
+        31 Bob Bryla                                     Illinois           Oracle Database 12c DBA Handbook                                    2015 Oracle Press                   Education                         65
+        29 Dan Gardner/Philip E. Tetlock                 Canada             Superforecasting                                                    2015 Broadway Books                 Life Enrichment                   17
+        19 Stuart Woods                                  Georgia            Naked Greed                                                         2015 G.P. Putnams Sons              Thriller                        9.99
+        20 Clive Cussler                                 Illinois           The Assassin                                                        2015 G.P. Putnams Sons              Thriller                        9.99
+        30 Itnatius Fernandez                            Tanzania           Beginning Oracle Database Administration 12c                        2015 Apress                         Education                      33.86
+        18 James Patterson                               New York           Truth or Die                                                        2015 Little, Brown and Company      Thriller                          28
+
+ AUTHOR_ID AUTHOR_NAME                                   HOME_STATE         TITLE                                                   PUBLICATION_YEAR PUBLISHER                      GENRE                          PRICE
+---------- --------------------------------------------- ------------------ ------------------------------------------------------- ---------------- ------------------------------ ------------------------- ----------
+         1 Matthew Morris                                Florida            Oracle Certification Prep                                           2016 ODB Press                      Education                      14.99
+         2 Brian Christian/Tom Griffiths                 Delaware           Algorithms to Live By                                               2016 Picador                        Science                           18
+
+46 rows selected. 
+
