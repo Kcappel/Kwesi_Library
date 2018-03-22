@@ -1,0 +1,237 @@
+SQL> @ D:ALL_TABLES.sql
+SQL> select * from authors;
+
+ AUTHOR_ID FIRST_NAME      LAST_NAME       HOME_STATE                                                                                                 
+---------- --------------- --------------- ------------------                                                                                         
+         1 Matthew         Morris          Florida                                                                                                    
+         2 Brian           Christian       Delaware                                                                                                   
+         3 Herbert         Schildt         Illinois                                                                                                   
+         4 Stephen         King            Oklahoma                                                                                                   
+         5 George          Bush            Connecticut                                                                                                
+         6 Dan             Brown           New Hampshire                                                                                              
+         7 Kristin         Hannah          California                                                                                                 
+         8 Tom             Clancy          Maryland                                                                                                   
+         9 Alvin           Toffler         New York                                                                                                   
+        10 Dale            Carnegie        Missouri                                                                                                   
+        11 Grant           Cardone         Louisiana                                                                                                  
+        12 Nelson          DeMille         New York                                                                                                   
+        13 Christopher     Paolini         California                                                                                                 
+        14 Jane            Austen          UK                                                                                                         
+        15 Sun             Tzu             Ancient China                                                                                              
+        16 Marcus          Aurelius        Ancient Rome                                                                                               
+        17 George          Martin          New Jersey                                                                                                 
+        18 James           Patterson       New York                                                                                                   
+        19 Stuart          Woods           Georgia                                                                                                    
+        20 Clive           Cussler         Illinois                                                                                                   
+        21 Paulo           Coelho          Brazil                                                                                                     
+        22 Steve           Lopez           California                                                                                                 
+        23 George          Orwell          India                                                                                                      
+        24 Richard         Preston         Massachusetts                                                                                              
+        25 Richard         Bach            Illinois                                                                                                   
+        26 Tim             Lebbon          UK                                                                                                         
+        27 Max             Brooks          New York                                                                                                   
+        28 Jordan          Ellenberg       Maryland                                                                                                   
+        29 Dan             Gardner         Canada                                                                                                     
+        30 Ignatius        Fernanandez     Tanzania                                                                                                   
+        31 Bob             Bryla           Illinois                                                                                                   
+        32 Michael         McLaughlin      Colorado                                                                                                   
+        33 Peter           Hamilton        UK                                                                                                         
+
+33 rows selected.
+
+SQL> select * from books;
+
+   BOOK_ID TITLE                                                    AUTHOR_ID AUTHOR_NAME                                   PUBLICATION_YEAR          
+---------- ------------------------------------------------------- ---------- --------------------------------------------- ----------------          
+PUBLISHER                      GENRE                          PRICE ISBN10         ISBN13                                                             
+------------------------------ ------------------------- ---------- ---------- ----------                                                             
+         1 Oracle Certification Prep                                        1 Matthew Morris                                            2016          
+ODB Press                      Education                      14.99 194140409X                                                                        
+                                                                                                                                                      
+         2 Algorithms to Live By                                            2 Brian Christian/Tom Griffiths                             2016          
+Picador                        Science                           18            9.7813E+12                                                             
+                                                                                                                                                      
+         3 Java: A Beginners Guide 6th Ed.                                  3 Herbert Schildt                                           2014          
+McGraw-Hill Education          Education                         40            9.7801E+12                                                             
+                                                                                                                                                      
+         4 11/22/1963                                                       4 Stephen King                                              2011          
+Scribner                       Alternate History                 35            9.7815E+12                                                             
+                                                                                                                                                      
+         5 Decision Points                                                  5 George W. Bush                                            2010          
+Crown Publishers               Memoir                            35            9.7803E+12                                                             
+                                                                                                                                                      
+         6 Mr. Mercedes                                                     4 Stephen King                                              2014          
+Scribner                       Crime Fiction                     30            9.7815E+12                                                             
+                                                                                                                                                      
+         7 The Lost Symbol                                                  6 Dan Brown                                                 2009          
+Doubleday                      Detective Fiction              29.95            9.7804E+12                                                             
+                                                                                                                                                      
+         8 The Nightingale                                                  7 Kristin Hannah                                            2015          
+St. Martins Press              Historical Fiction             27.99            9.7803E+12                                                             
+                                                                                                                                                      
+         9 Clear & Present Danger                                           8 Tom Clancy                                                1989          
+Putnam                         Govt. Fiction                   8.99 0399134409                                                                        
+                                                                                                                                                      
+        10 The Dark Tower VII                                               4 Stephen King                                              2004          
+Grant                          Fantasy                        18.95            9.7819E+12                                                             
+                                                                                                                                                      
+        11 The Third Wave                                                   9 Alvin Toffler                                             1980          
+Bantam Books                   Futurology                      3.95 0517327198                                                                        
+                                                                                                                                                      
+        12 The Stand                                                        4 Stephen King                                              1978          
+Doubleday                      Apocalyptic Fiction            16.95            9.7804E+12                                                             
+                                                                                                                                                      
+        13 How to Win Friends & Influence People                           10 Dale Carnegie                                             1936          
+Simon & Schuster               Life Enrichment                16.95 1439167346                                                                        
+                                                                                                                                                      
+        14 The 10X Rule                                                    11 Grant Cardone                                             2011          
+Wiley                          Life Enrichment                24.95            9.7805E+12                                                             
+                                                                                                                                                      
+        15 The Lions Game                                                  12 Nelson DeMille                                            2000          
+Grand Central Publishing       Govt. Fiction                  15.95            9.7804E+11                                                             
+                                                                                                                                                      
+        16 The Mist                                                         4 Stephen King                                              1980          
+Viking Press                   Supernatural Horror             6.99            9.7805E+12                                                             
+                                                                                                                                                      
+        17 Inferno                                                          6 Dan Brown                                                 2013          
+Doubleday                      Detective Fiction                 16            9.7804E+12                                                             
+                                                                                                                                                      
+        18 Eldest                                                          13 Christopher Paolini                                       2005          
+Alfred A. Knoph                Fantasy                        12.99 037582670X                                                                        
+                                                                                                                                                      
+        19 Pride & Prejudice % Zombies                                     14 Jane Austen                                               2009          
+Quirk Books                    Comical Fiction                12.95            9.7816E+12                                                             
+                                                                                                                                                      
+        20 The Art of War                                                  15 Sun Tzu                                                   2009          
+Nabla                          Historical Strategy             3.99            9.7819E+12                                                             
+                                                                                                                                                      
+        21 Meditations                                                     16 Marcus Aurelius                                           2014          
+Black & White Classics         Historical Non-Fiction          7.99            9.7815E+12                                                             
+                                                                                                                                                      
+        22 A Game of Thrones                                               17 George RR Martin                                          1996          
+Bantam Spectra                 Medival Fantasy                 8.99 0553103547                                                                        
+                                                                                                                                                      
+        23 A Clash of Kings                                                17 George RR Martin                                          1999          
+Bantam Spectra                 Medival Fantasy                 8.99 0553108034                                                                        
+                                                                                                                                                      
+        24 A Storm of Swords                                               17 George RR Martin                                          2000          
+Bantam Spectra                 Medival Fantasy                 9.99 0553106635                                                                        
+                                                                                                                                                      
+        25 A Feast For Crows                                               17 George RR Martin                                          2005          
+Bantam Spectra                 Medival Fantasy                 9.99 0553801503                                                                        
+                                                                                                                                                      
+        26 A Dance With Dragons                                            17 George RR Martin                                          2011          
+Bantam Spectra                 Medival Fantasy                 9.99            9.7806E+12                                                             
+                                                                                                                                                      
+        27 Truth or Die                                                    18 James Patterson                                           2015          
+Little, Brown and Company      Thriller                          28 0316407011                                                                        
+                                                                                                                                                      
+        28 Naked Greed                                                     19 Stuart Woods                                              2015          
+G.P. Putnams Sons              Thriller                        9.99            9.7805E+12                                                             
+                                                                                                                                                      
+        29 The Assassin                                                    20 Clive Cussler                                             2015          
+G.P. Putnams Sons              Thriller                        9.99            9.7804E+12                                                             
+                                                                                                                                                      
+        30 The Alchemist                                                   21 Paulo Coelho                                              1988          
+Harper Touch                   Fantasy Fiction                 7.99 0062502174                                                                        
+                                                                                                                                                      
+        31 The Da Vinci Code                                                6 Dan Brown                                                 2003          
+Doubleday                      Crime Fiction                   9.99 0385504209                                                                        
+                                                                                                                                                      
+        32 The Dark Tower III                                               4 Stephen King                                              1991          
+Grant                          Fantasy                         7.99            9.7809E+12                                                             
+
+   BOOK_ID TITLE                                                    AUTHOR_ID AUTHOR_NAME                                   PUBLICATION_YEAR          
+---------- ------------------------------------------------------- ---------- --------------------------------------------- ----------------          
+PUBLISHER                      GENRE                          PRICE ISBN10         ISBN13                                                             
+------------------------------ ------------------------- ---------- ---------- ----------                                                             
+                                                                                                                                                      
+        33 The Shining                                                      4 Stephen King                                              1977          
+Doubleday                      Supernatural Horror             8.99            9.7804E+12                                                             
+                                                                                                                                                      
+        34 The Soloist                                                     22 Steve Lopez                                               2010          
+Penguin Publishing             Fiction                        15.99            9.7804E+12                                                             
+                                                                                                                                                      
+        35 1984                                                            23 George Orwell                                             1949          
+Secker & Warburg               Dystopian Fiction               9.99            9.7805E+12                                                             
+                                                                                                                                                      
+        36 The Hot Zone                                                    24 Richard Preston                                           1995          
+Anchor                         Thriller                        7.99 0385479565                                                                        
+                                                                                                                                                      
+        37 Jonathan Livingston Seagull                                     25 Richard Bach                                              1970          
+Macmillian                     Life Enrichment                 7.63            9.7815E+12                                                             
+                                                                                                                                                      
+        38 Alien: Out of the Shadows                                       26 Tim Lebbon                                                2014          
+Titan Books                    Sci-Fi Horror                   7.99            9.7818E+12                                                             
+                                                                                                                                                      
+        39 World War Z                                                     27 Max Brooks                                                2006          
+Crown Publishers               Apocalyptic Fiction            14.95 0307346609                                                                        
+                                                                                                                                                      
+        40 Wild Cards I                                                    17 George RR Martin                                          1987          
+Bantam Spectra                 Superhero Fiction               8.99            9.7806E+12                                                             
+                                                                                                                                                      
+        41 How Not to Be Wrong                                             28 Jordan Ellenberg                                          2014          
+Penguin Publishing             Life Enrichment                   17            9.7816E+12                                                             
+                                                                                                                                                      
+        42 Superforecasting                                                29 Dan Gardner/Philip E. Tetlock                             2015          
+Broadway Books                 Life Enrichment                   17            9.7808E+12                                                             
+                                                                                                                                                      
+        43 Beginning Oracle Database Administration 12c                    30 Itnatius Fernandez                                        2015          
+Apress                         Education                      33.86            9.7815E+12                                                             
+                                                                                                                                                      
+        44 Oracle Database 12c DBA Handbook                                31 Bob Bryla                                                 2015          
+Oracle Press                   Education                         65            9.7801E+12                                                             
+                                                                                                                                                      
+        45 Oracle Database 12c PL/SQL Programming                          32 Michael McLaughlin                                        2014          
+Oracle Press                   Education                         70            9.7801E+12                                                             
+                                                                                                                                                      
+        46 The Reality Dysfunction                                         33 Peter F. Hamilton                                         1996          
+Orbit                          Science Fiction                   19            9.7803E+12                                                             
+                                                                                                                                                      
+
+46 rows selected.
+
+SQL> select * from customers;
+
+CUSTOMER_ID FIRST_NAME LAST_NAME  ADDRESS                        CITY                 ST PHONE_NUMBER     WALLET                                      
+----------- ---------- ---------- ------------------------------ -------------------- -- ------------ ----------                                      
+          1 Goku       Son        108 Saiyan Way                 West City            TX   5128646324         50                                      
+          2 Vegeta     Breigh     5689 Capsule Corp              West City            TX   5126398796         55                                      
+          3 Jon        Targaryen  281 Nights Watch Court         Westeros             NY   9294814862         33                                      
+          4 Daenerys   Targaryen  11 Queens Place                Westeros             CA   5104569881         95                                      
+          5 Naruto     Uzumaki    459 Hokage Road                Hidden Leaf          AK   9071564894         15                                      
+          6 Noob-Noob  Sanchez    1010 Portal Way                Multiverse           TX   5120010111         10                                      
+          7 Anakin     Skywalker  66 Order Road                  Coruscant            TN   6159781320        100                                      
+          8 Bruce      Wayne      1939 Bat Cove                  Gotham               NY   9297891354    9999.99                                      
+          9 Robert     Baratheon  105 OpenField Blvd             Westeros             CA   5104157893        163                                      
+         10 John       117        117 Spartan Court              Halo City            PA   6100238910        117                                      
+         11 Ash        Ketchum    151 Em All Way                 Pallet Town          TX   5121584987        151                                      
+         12 Tom        Riddle     6 Horcrux Ln                   Hogwarts             HI   8087481685         87                                      
+         13 Qui-Gon    Jinn       193 Spirit Way                 Coruscant            TX   5127489165          0                                      
+         14 Cthulhu    R'lyeh     8291 Ssendam Court             Elder Thing          AH     11101111     111.11                                      
+         15 John       Wick       690 GunFu Terrace              Daisy City           TX   5121657931        901                                      
+
+15 rows selected.
+
+SQL> select * from stores;
+
+  STORE_ID STORE_NAME                     ADDRESS                   CITY       ST   ZIP_CODE PHONE                                                    
+---------- ------------------------------ ------------------------- ---------- -- ---------- ------------                                             
+         1 Book People                    603 N Lamar Blvd          Austin     TX      78703 5124725050                                               
+         2 Barnes and Noble               5601 Brodie Lane          Austin     TX      78745 5128923493                                               
+         3 Half Price Books               2929 S Lamar Blvd         Austin     TX      78704 5124433138                                               
+         4 Austin Books and Comics        5002 N Lamar Blvd         Austin     TX      78751 5124544797                                               
+         5 12th Street Books              827 W 12th Street         Austin     TX      78701 5124998828                                               
+         6 ACC Book Store                 7748 US 290               Austin     TX      78736 5122882303                                               
+         7 Goodwill                       7100 US 290               Austin     TX      78736 5122887700                                               
+         8 Malvern Books                  613 W 29th Street         Austin     TX      78705 5123222097                                               
+         9 South Congress Books           1608 S Congress Ave       Austin     TX      78704 5129168882                                               
+        10 BookWoman                      5501 N Lamar Blvd         Austin     TX      78751 5124722785                                               
+        11 Resistencia Bookstore          4926 E Cesar Chavez       Austin     TX      78702 5123899881                                               
+        12 Monkeywrench Books             110 E N Loop Blvd         Austin     TX      78751 5127666925                                               
+        13 Recycled Reads                 5335 Burnet Road          Austin     TX      78756 5123235123                                               
+        14 Balcones Books                 3313 Hancock Drive        Austin     TX      78731 5127929260                                               
+
+14 rows selected.
+
+SQL> spool off
