@@ -16,5 +16,5 @@ BEGIN
 		
 	COMMIT;
 	
-END:
+END;
 /
