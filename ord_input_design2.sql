@@ -17,7 +17,7 @@ ON orders.customer_id = customers.customer_id;
 	
 ---------------------------------REPORTS----------------------------------------------------------------------------------------------------------
 [April 14th, 2018]
---Concluded scripting and a little testing of the first procedure using "p_new_ord(1,1,1)". Function call accepts 3 parameters; customer id, store id, and book id. 
+--Concluded scripting and a little testing of the first procedure using "p_new_ord(1,1,1)". Procedure call accepts 3 parameters; customer id, store id, and book id. 
 --ORDER_TOTAL and WALLET_BAL columns currently remain NULL until function is more fleshed out. 
 [April 16th, 2018]
 --I wrote up a query for testing to ensure that the relationship between tables is valid. Will update with more queries involving
