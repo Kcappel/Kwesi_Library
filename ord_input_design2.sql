@@ -26,7 +26,8 @@ CREATE OR REPLACE FUNCTION get_wallet_bal(f_id IN NUMBER)
 		RETURN (wallet_bal);
 	END;
 /
-	
+SELECT DISTINCT get_wallet_bal(5) FROM customers; --Function Call
+
 	
 ---------------------------------REPORTS----------------------------------------------------------------------------------------------------------
 [April 14th, 2018]
