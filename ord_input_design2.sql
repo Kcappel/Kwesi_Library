@@ -54,4 +54,5 @@ SELECT DISTINCT get_ord_total(1) FROM books; --Function Call Example
 [April 18th, 2018]
 --Function started and tested. There is an error w/logic, I need to get it to return a single row instead of all rows in table. 
 [April 23rd, 2018]
---Solved my issue with the functions. Now they retrieve the single value that is needed for the calculations. 
+--Solved my issue with the functions. Now they retrieve the single value that is needed for the calculations. In addition to that,
+--a second function was created for retrieving order totals which will be used for more calculations. 
