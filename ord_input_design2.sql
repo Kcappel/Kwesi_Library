@@ -30,9 +30,9 @@ SELECT DISTINCT get_wallet_bal(5) FROM customers; --Function Call Example
 SELECT get_wallet_bal(5) FROM dual;               --I can also use this syntax for retrieving the needed value. 
 
 
-CREATE OR REPLACE FUNCTION get_ord_total (f_bk_id IN NUMBER) --This function retrieves the customers ORDER TOTAL. Essentially it is the price of one book.
-	RETURN NUMBER					     --since there is not quantity column yet. 
-	IS ord_total NUMBER(5,2);
+CREATE OR REPLACE FUNCTION get_ord_total (f_bk_id IN NUMBER) /*This function retrieves the customers ORDER TOTAL. 
+	RETURN NUMBER					     --Essentially it is the price of a single book 
+	IS ord_total NUMBER(5,2);			     since there is not a quantity column yet. */
 	
 	BEGIN
 		SELECT price
