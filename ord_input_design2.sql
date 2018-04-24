@@ -30,7 +30,7 @@ SELECT DISTINCT get_wallet_bal(5) FROM customers; --Function Call Example
 
 
 CREATE OR REPLACE FUNCTION get_ord_total (f_bk_id IN NUMBER) --This function retrieves the customers ORDER TOTAL. Essentially it is the price of one book.
-	RETURN NUMBER					     --since there is not quantity option yet. 
+	RETURN NUMBER					     --since there is not quantity column yet. 
 	IS ord_total NUMBER(5,2);
 	
 	BEGIN
