@@ -31,7 +31,7 @@ SELECT get_wallet_bal(5) FROM dual;               --I can also use this syntax f
 
 
 CREATE OR REPLACE FUNCTION get_ord_total (f_bk_id IN NUMBER) /*This function retrieves the customers ORDER TOTAL. 
-	RETURN NUMBER					     --Essentially it is the price of a single book 
+	RETURN NUMBER					     Essentially it is the price of a single book 
 	IS ord_total NUMBER(5,2);			     since there is not a quantity column yet. */
 	
 	BEGIN
