@@ -27,6 +27,7 @@ CREATE OR REPLACE FUNCTION get_wallet_bal(f_id IN NUMBER) --This function retrie
 	END;
 /
 SELECT DISTINCT get_wallet_bal(5) FROM customers; --Function Call Example
+SELECT get_wallet_bal(5) FROM dual;               --I can also use this syntax for retrieving the needed value. 
 
 
 CREATE OR REPLACE FUNCTION get_ord_total (f_bk_id IN NUMBER) --This function retrieves the customers ORDER TOTAL. Essentially it is the price of one book.
@@ -42,6 +43,7 @@ CREATE OR REPLACE FUNCTION get_ord_total (f_bk_id IN NUMBER) --This function ret
 	END;
 /
 SELECT DISTINCT get_ord_total(1) FROM books; --Function Call Example
+SELECT get_ord_total(1) FROM dual;           --I can also use this syntax for retrieving the required value. 
 
 	
 ---------------------------------REPORTS----------------------------------------------------------------------------------------------------------
@@ -56,3 +58,5 @@ SELECT DISTINCT get_ord_total(1) FROM books; --Function Call Example
 [April 23rd, 2018]
 --Solved my issue with the functions. Now they retrieve the single value that is needed for the calculations. In addition to that,
 --a second function was created for retrieving order totals which will be used for more calculations. 
+[April 24th, 2018]
+--Included a second syntax option for my functions for future reference. 
